@@ -4,4 +4,5 @@
 
 # frontend-project-lvl1
 
-[![brain-even](https://asciinema.org/a/lGl6bAUtBvFjfnL0un4Vu4ZWv.svg)](https://asciinema.org/a/lGl6bAUtBvFjfnL0un4Vu4ZWv)
+[![asciicast](https://asciinema.org/a/kgKE6RWWu7RSWHZ1Pdk8ZN2Rn.svg)](https://asciinema.org/a/kgKE6RWWu7RSWHZ1Pdk8ZN2Rn)
+
