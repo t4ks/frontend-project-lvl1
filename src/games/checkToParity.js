@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import { getRandomNumber, sayHello } from '../utils.js';
-import GAME_ROUNDS from '../constants.js';
+import { GAME_ROUNDS } from '../constants.js';
 
 
 const checkToParity = () => {

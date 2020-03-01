@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-
+import { OPERATION_ADD, OPERATION_MUL, OPERATION_SUB } from './constants.js';
 
 const getRandomNumber = (min, max) => {
   const mi = Math.ceil(min);
@@ -15,4 +15,10 @@ const sayHello = () => {
 };
 
 
-export { getRandomNumber, sayHello };
+const getRandomOperation = () => {
+  const ops = [OPERATION_MUL, OPERATION_ADD, OPERATION_SUB];
+  return ops[getRandomNumber(0, 3)];
+};
+
+
+export { getRandomNumber, sayHello, getRandomOperation };
