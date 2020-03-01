@@ -4,5 +4,9 @@
 
 # frontend-project-lvl1
 
+## brain-even
 [![asciicast](https://asciinema.org/a/kgKE6RWWu7RSWHZ1Pdk8ZN2Rn.svg)](https://asciinema.org/a/kgKE6RWWu7RSWHZ1Pdk8ZN2Rn)
+
+## brain-calc
+[![asciicast](https://asciinema.org/a/h3waEVN0i6lbumwC8gDtGiLku.svg)](https://asciinema.org/a/h3waEVN0i6lbumwC8gDtGiLku)
 
