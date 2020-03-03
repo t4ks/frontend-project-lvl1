@@ -9,6 +9,7 @@ const getRandomNumber = (min, max) => {
 
 
 const sayHello = () => {
+  console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}`);
   return name;
@@ -21,4 +22,17 @@ const getRandomOperation = () => {
 };
 
 
-export { getRandomNumber, sayHello, getRandomOperation };
+const gcd = (a, b) => {
+  if (!b) {
+    return a;
+  }
+
+  return gcd(b, a % b);
+};
+
+export {
+  getRandomNumber,
+  sayHello,
+  getRandomOperation,
+  gcd,
+};
