@@ -37,12 +37,11 @@ const generateProgression = (step, length) => {
   for (let i = 0; i < length; i += 1) {
     if (i === 0) {
       arr[i] = step;
-      continue
+    } else {
+      arr[i] = arr[i - 1] + step;
     }
-
-    arr[i] = arr[i-1] + step;
   }
-  
+
   return arr;
 };
 
