@@ -11,7 +11,6 @@ const greatestCommonDivisor = () => {
   while (round < GAME_ROUNDS) {
     const a = getRandomNumber(1, 10);
     const b = getRandomNumber(10, 20);
-    
     console.log(`Question: ${a} ${b}`);
 
     const res = gcd(a, b);

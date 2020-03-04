@@ -30,9 +30,27 @@ const gcd = (a, b) => {
   return gcd(b, a % b);
 };
 
+
+const generateProgression = (step, length) => {
+  const arr = [];
+
+  for (let i = 0; i < length; i += 1) {
+    if (i === 0) {
+      arr[i] = step;
+      continue
+    }
+
+    arr[i] = arr[i-1] + step;
+  }
+  
+  return arr;
+};
+
+
 export {
   getRandomNumber,
   sayHello,
   getRandomOperation,
   gcd,
+  generateProgression,
 };
