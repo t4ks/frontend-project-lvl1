@@ -46,10 +46,21 @@ const generateProgression = (step, length) => {
 };
 
 
+const isPrime = (number) => {
+  for (let i = 2; i < Math.sqrt(number); i += 1) {
+    if (number % i < 1) {
+      return false;
+    }
+  }
+  return number > 1;
+};
+
+
 export {
   getRandomNumber,
   sayHello,
   getRandomOperation,
   gcd,
   generateProgression,
+  isPrime,
 };
