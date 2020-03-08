@@ -47,7 +47,7 @@ const generateProgression = (step, length) => {
 
 
 const isPrime = (number) => {
-  for (let i = 2; i < Math.sqrt(number); i += 1) {
+  for (let i = 2; i <= Math.sqrt(number); i += 1) {
     if (number % i < 1) {
       return false;
     }
