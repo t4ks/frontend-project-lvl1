@@ -7,7 +7,7 @@ const OPERATION_MUL = '*';
 
 const getRandomOperation = () => {
   const ops = [OPERATION_MUL, OPERATION_ADD, OPERATION_SUB];
-  return ops[getRandomNumber(0, 3)];
+  return ops[getRandomNumber(0, ops.length)];
 };
 
 const description = 'What is the result of the expression?';
