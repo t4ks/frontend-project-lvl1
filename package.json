@@ -1,7 +1,7 @@
 {
   "name": "frontend-project-lvl1",
   "version": "1.2.0",
-  "description": "",
+  "description": "Brain games. Project for learning JavaScript.",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,9 +10,10 @@
     "type": "git",
     "url": "git@hexlet:t4ks/frontend-project-lvl1.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Vasya Pupkin",
+  "license": "MIT",
   "type": "module",
+  "keywords": ["js", "cli", "brain", "games"],
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",

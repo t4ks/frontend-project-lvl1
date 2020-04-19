@@ -1,7 +1,22 @@
-import { getRandomNumber, generateProgression } from '../core/utils.js';
+import { getRandomNumber } from '../core/utils.js';
 import runGame from '../core/core.js';
 
+const generateProgression = (step, length) => {
+  const arr = [];
+
+  for (let i = 0; i < length; i += 1) {
+    if (i === 0) {
+      arr[i] = getRandomNumber(0, 100);
+    } else {
+      arr[i] = arr[i - 1] + step;
+    }
+  }
+
+  return arr;
+};
+
 const PROGRESSION_LEN = 10;
+const description = 'What number is missing in the progression?';
 
 const progression = () => {
   const step = getRandomNumber(2, 6);
@@ -9,8 +24,7 @@ const progression = () => {
   const elementInProgression = getRandomNumber(0, PROGRESSION_LEN);
   const correctAnswer = arr[elementInProgression].toString();
   arr[elementInProgression] = '..';
-  console.log('What number is missing in the progression?');
   return { question: arr.join(' '), correctAnswer };
 };
 
-export default () => runGame(progression);
+export default () => runGame(progression, description);

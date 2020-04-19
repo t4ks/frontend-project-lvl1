@@ -1,17 +1,13 @@
 import readlineSync from 'readline-sync';
-import GAME_ROUNDS from './constants.js';
 
-const sayHello = () => {
+const GAME_ROUNDS = 3;
+
+const runGame = (game, description) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}`);
-  return name;
-};
-
-
-const runGame = (game) => {
-  const name = sayHello();
   let round = 0;
+  console.log(description);
 
   while (round < GAME_ROUNDS) {
     const gameObj = game();
