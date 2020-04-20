@@ -1,5 +1,5 @@
-import { getRandomNumber } from '../core/utils.js';
-import runGame from '../core/core.js';
+import { getRandomNumber } from '../utils.js';
+import runGame from '../index.js';
 
 const generateProgression = (step, length) => {
   const arr = [];

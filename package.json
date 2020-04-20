@@ -13,7 +13,12 @@
   "author": "Vasya Pupkin",
   "license": "MIT",
   "type": "module",
-  "keywords": ["js", "cli", "brain", "games"],
+  "keywords": [
+    "js",
+    "cli",
+    "brain",
+    "games"
+  ],
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",

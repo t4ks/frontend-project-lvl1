@@ -1,5 +1,5 @@
-import runGame from '../core/core.js';
-import { getRandomNumber } from '../core/utils.js';
+import runGame from '../index.js';
+import { getRandomNumber } from '../utils.js';
 
 const gcd = (a, b) => {
   if (!b) {

@@ -1,5 +1,5 @@
-import runGame from '../core/core.js';
-import { getRandomNumber } from '../core/utils.js';
+import runGame from '../index.js';
+import { getRandomNumber } from '../utils.js';
 
 // eslint-disable-next-line no-confusing-arrow
 const isEven = (number) => number % 2 === 0 ? 'yes' : 'no';

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { checkToParity } from '../src/index.js';
+import checkToParity from '../src/games/checkToParity.js';
 
 
 checkToParity();

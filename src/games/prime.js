@@ -1,5 +1,5 @@
-import runGame from '../core/core.js';
-import { getRandomNumber } from '../core/utils.js';
+import runGame from '../index.js';
+import { getRandomNumber } from '../utils.js';
 
 const isPrime = (number) => {
   for (let i = 2; i <= Math.sqrt(number); i += 1) {
