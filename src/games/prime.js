@@ -2,12 +2,16 @@ import runGame from '../index.js';
 import { getRandomNumber } from '../utils.js';
 
 const isPrime = (number) => {
+  if (number <= 1) {
+    return false;
+  }
+
   for (let i = 2; i <= Math.sqrt(number); i += 1) {
     if (number % i < 1) {
       return false;
     }
   }
-  return number > 1;
+  return true;
 };
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
