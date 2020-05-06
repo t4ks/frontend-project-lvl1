@@ -18,8 +18,7 @@ const description = 'Answer "yes" if given number is prime. Otherwise answer "no
 
 const prime = () => {
   const question = getRandomNumber(1, 1000);
-  const numIsPrime = isPrime(question);
-  const correctAnswer = numIsPrime === true ? 'yes' : 'no';
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
 
   return { question, correctAnswer };
 };

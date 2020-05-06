@@ -1,15 +1,9 @@
 import { getRandomNumber } from '../utils.js';
 import runGame from '../index.js';
 
-const generateProgression = (step, length, firstElement) => {
-  const arr = [firstElement];
-
-  for (let i = 1; i < length; i += 1) {
-    arr[i] = arr[i - 1] + step;
-  }
-
-  return arr;
-};
+const generateProgression = (step, length, firstElement) => Array(length)
+  .fill(firstElement)
+  .map((curValue, index) => curValue + (step * index));
 
 
 const PROGRESSION_LEN = 10;
