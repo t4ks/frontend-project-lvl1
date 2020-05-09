@@ -12,14 +12,14 @@ const description = 'What number is missing in the progression?';
 const progression = () => {
   const step = getRandomNumber(2, 6);
   const arr = generateProgression(step, PROGRESSION_LEN, getRandomNumber(0, 100));
-  const elementInProgression = getRandomNumber(0, PROGRESSION_LEN);
+  const randomIndexInProgression = getRandomNumber(0, PROGRESSION_LEN);
   let correctAnswer;
-  if (elementInProgression === arr.length) {
-    correctAnswer = arr[elementInProgression - 1];
-    arr[elementInProgression - 1] = '..';
+  if (randomIndexInProgression === arr.length) {
+    correctAnswer = arr[randomIndexInProgression - 1];
+    arr[randomIndexInProgression - 1] = '..';
   } else {
-    correctAnswer = arr[elementInProgression];
-    arr[elementInProgression] = '..';
+    correctAnswer = arr[randomIndexInProgression];
+    arr[randomIndexInProgression] = '..';
   }
   return { question: arr.join(' '), correctAnswer: correctAnswer.toString() };
 };
