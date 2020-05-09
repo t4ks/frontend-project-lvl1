@@ -4,18 +4,29 @@
 
 # frontend-project-lvl1
 
+# Installation
+
+ - clone repo
+ - run `make install`
+ 
+# Publish a new version
+ - `make publish`
+
+# Run linter
+ - `make lint`
+
 ## brain-even
-[![asciicast](https://asciinema.org/a/kgKE6RWWu7RSWHZ1Pdk8ZN2Rn.svg)](https://asciinema.org/a/kgKE6RWWu7RSWHZ1Pdk8ZN2Rn)
+![brain-even](https://user-images.githubusercontent.com/10071749/81474283-9ecd4a80-9204-11ea-9bbc-1a5f44f485c4.gif)
 
 ## brain-calc
-[![asciicast](https://asciinema.org/a/h3waEVN0i6lbumwC8gDtGiLku.svg)](https://asciinema.org/a/h3waEVN0i6lbumwC8gDtGiLku)
+![brain-calc](https://user-images.githubusercontent.com/10071749/81474459-e43e4780-9205-11ea-9a89-7dccd918f461.gif)
 
 ## brain-gcd
-[![asciicast](https://asciinema.org/a/dNAvcJLCgFY4MAUVTcb9JRhqI.svg)](https://asciinema.org/a/dNAvcJLCgFY4MAUVTcb9JRhqI)
+![brain-gcd](https://user-images.githubusercontent.com/10071749/81474510-38e1c280-9206-11ea-8df8-6d14d65fc9d7.gif)
 
 ## brain-progression
-[![asciicast](https://asciinema.org/a/9JKPz1jIX9ARCKA2cs66QWOez.svg)](https://asciinema.org/a/9JKPz1jIX9ARCKA2cs66QWOez)
+![brain-progression](https://user-images.githubusercontent.com/10071749/81474573-ba395500-9206-11ea-880c-71f7529c240d.gif)
 
 ## brain-prime
-[![asciicast](https://asciinema.org/a/iHdxdzOQ0cakscAVUiAjKW1Jy.svg)](https://asciinema.org/a/iHdxdzOQ0cakscAVUiAjKW1Jy)
+![brain-prime](https://user-images.githubusercontent.com/10071749/81474597-e1902200-9206-11ea-986c-7ad36b35a522.gif)
 
