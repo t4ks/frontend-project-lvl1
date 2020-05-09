@@ -8,9 +8,9 @@ const getRandomOperation = () => {
 
 const description = 'What is the result of the expression?';
 
-const calcGame = () => {
-  const numOne = getRandomNumber(1, 100);
-  const numTwo = getRandomNumber(1, 100);
+const calc = () => {
+  const numOne = getRandomNumber(1, 10);
+  const numTwo = getRandomNumber(1, 10);
   const operation = getRandomOperation();
 
   let res = 0;
@@ -29,7 +29,7 @@ const calcGame = () => {
       throw new Error('The operation is not supported');
   }
 
-  return { question: `${numOne} ${operation} ${numTwo}`, correctAnswer: res };
+  return { question: `${numOne} ${operation} ${numTwo}`, correctAnswer: res.toString() };
 };
 
-export default () => runGame(calcGame, description);
+export default () => runGame(calc, description);
