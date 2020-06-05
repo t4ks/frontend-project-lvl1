@@ -10,14 +10,14 @@ const runGame = (makeGame, description) => {
   console.log(description);
 
   while (round < NUMBER_OF_ROUNDS) {
-    const gameObj = makeGame();
-    console.log('Question: ', gameObj.question);
+    const { question, correctAnswer } = makeGame();
+    console.log('Question: ', question);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (userAnswer === gameObj.correctAnswer) {
+    if (userAnswer === correctAnswer) {
       console.log('Correct!');
       round += 1;
     } else {
-      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${gameObj.correctAnswer}".`);
+      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}".`);
       console.log(`Let's try again, ${name}!`);
       round = 0;
     }

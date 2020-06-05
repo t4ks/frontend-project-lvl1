@@ -1,7 +1,7 @@
 import runGame from '../index.js';
 import { getRandomNumber } from '../utils.js';
 
-const getRandomOperation = () => {
+const getRandomOperators = () => {
   const operators = ['+', '-', '*'];
   return operators[getRandomNumber(0, operators.length - 1)];
 };
@@ -11,11 +11,11 @@ const description = 'What is the result of the expression?';
 const calc = () => {
   const numOne = getRandomNumber(1, 10);
   const numTwo = getRandomNumber(1, 10);
-  const operation = getRandomOperation();
+  const operator = getRandomOperators();
 
-  let res = 0;
+  let res;
 
-  switch (operation) {
+  switch (operator) {
     case '+':
       res = numOne + numTwo;
       break;
@@ -26,10 +26,10 @@ const calc = () => {
       res = numOne * numTwo;
       break;
     default:
-      throw new Error('The operation is not supported');
+      throw new Error('The operator is not supported');
   }
 
-  return { question: `${numOne} ${operation} ${numTwo}`, correctAnswer: res.toString() };
+  return { question: `${numOne} ${operator} ${numTwo}`, correctAnswer: res.toString() };
 };
 
 export default () => runGame(calc, description);
