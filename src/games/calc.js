@@ -8,7 +8,7 @@ const getRandomOperators = () => {
 
 const description = 'What is the result of the expression?';
 
-const calc = () => {
+const makeGame = () => {
   const numOne = getRandomNumber(1, 10);
   const numTwo = getRandomNumber(1, 10);
   const operator = getRandomOperators();
@@ -32,4 +32,4 @@ const calc = () => {
   return { question: `${numOne} ${operator} ${numTwo}`, correctAnswer: res.toString() };
 };
 
-export default () => runGame(calc, description);
+export default () => runGame(makeGame, description);

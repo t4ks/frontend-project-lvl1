@@ -8,7 +8,7 @@ const generateProgression = (step, length, firstElement) => Array(length)
 const PROGRESSION_LEN = 10;
 const description = 'What number is missing in the progression?';
 
-export default () => runGame(() => {
+const makeGame = () => {
   const step = getRandomNumber(2, 6);
   const firstElementInProgression = getRandomNumber(0, 100);
   const progression = generateProgression(step, PROGRESSION_LEN, firstElementInProgression);
@@ -16,4 +16,6 @@ export default () => runGame(() => {
   const correctAnswer = progression[randomIndexInProgression];
   progression[randomIndexInProgression] = '..';
   return { question: progression.join(' '), correctAnswer: correctAnswer.toString() };
-}, description);
+};
+
+export default () => runGame(makeGame, description);
